@@ -23,22 +23,22 @@ public class Menus {
     @Column(name ="category")
     private String category;
 
-    @Column(name = "imgFile")
-    private String imgFile;
+    @Column(name = "imgfile")
+    private String imgfile;
 
-    @Column(name = "useYn")
-    private String useYn;
+    @Column(name = "useyn")
+    private String useyn;
 
     @Column(name = "name")
     private String name;
 
     @Builder // 해당클래스의 빌더 패턴 클래스를 생성
-    public Menus(Long id ,int seq, String category,String imgFile, String useYn,String name){
+    public Menus(Long id ,int seq, String category,String imgfile, String useyn,String name){
         this.id = id;
         this.seq = seq;
         this.category = category;
-        this.imgFile = imgFile;
-        this.useYn = useYn;
+        this.imgfile = imgfile;
+        this.useyn = useyn;
         this.name = name;
     }
 

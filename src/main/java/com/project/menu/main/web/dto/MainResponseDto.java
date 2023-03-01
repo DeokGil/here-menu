@@ -10,12 +10,13 @@ public class MainResponseDto {
     private  Long id;
     private int seq;
     private String category;
-    private String imgFile;
+    private String imgfile;
+
     public MainResponseDto(Menus entity){
         this.id = entity.getId();
         this.seq = entity.getSeq();
         this.category = entity.getCategory();
-        this.imgFile = entity.getImgFile();
+        this.imgfile = entity.getImgfile();
     }
 
 }

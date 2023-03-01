@@ -13,6 +13,6 @@ public class MenusListResponseDto {
         this.id = entity.getId();
         this.seq = entity.getSeq();
         this.category = entity.getCategory();
-        this.imgfile = entity.getImgFile();
+        this.imgfile = entity.getImgfile();
     }
 }
