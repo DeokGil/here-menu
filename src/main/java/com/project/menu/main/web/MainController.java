@@ -32,7 +32,6 @@ public class MainController {
     public ResponseEntity<List<Menus>> main(@PathVariable String category) {
         System.out.println("::::::: ////// : ");
         System.out.println("::::::: //////111 : " + category);
-
         return ResponseEntity.ok(menuService.findCategory(category));
     }
     @PostMapping("/insert")
