@@ -13,7 +13,7 @@ import springfox.documentation.spring.web.plugins.Docket;
 import springfox.documentation.swagger2.annotations.EnableSwagger2;
 
     @Configuration
-    @Profile({"ebdev","dev"})
+    //@Profile({"ebdev","dev"})
     @EnableSwagger2
     public class SwaggerConfig implements WebMvcConfigurer {
         private static final String API_NAME = "ToyProject API";

@@ -32,14 +32,7 @@ public class MainController {
     public ResponseEntity<List<Menus>> main(@PathVariable String category) {
         System.out.println("::::::: ////// : ");
         System.out.println("::::::: //////111 : " + category);
-        return ResponseEntity.ok(menuService.findCategory(category));
-    }
 
-    @GetMapping("/test")
-    @ApiOperation(value = "test 페이지", notes = "test 불러온다.")
-    public ResponseEntity<List<Menus>> test(@PathVariable String category) {
-        System.out.println("::::::: ////// : ");
-        System.out.println("::::::: //////111 : " + category);
         return ResponseEntity.ok(menuService.findCategory(category));
     }
 
